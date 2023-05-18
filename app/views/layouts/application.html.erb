@@ -1,16 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Vanilla Rails</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack</title>
+    <link rel="stylesheet" type="text/css" href="pages.scss">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
+<body>
 
-  <body>
+<h1>
+Hot or Not
+</h1>
+
+    <div class="image-grid">
+        <a href="/users"><img src="/assets/images/ace.png" alt="Ace card linked to users page"></a>
+        <a href="/teams"><img src="/assets/images/king.png" alt="King card linked to teams page"></a>
+        <a href="/tables"><img src="/assets/images/queen.png" alt="Queen card linked to tables page"></a>
+        <a href="/practice"><img src="/assets/images/jack.png" alt="Jack card linked to practice page"></a>
+    </div>
     <%= yield %>
-  </body>
+</body>
+
 </html>
